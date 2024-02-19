@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Data Table</title>
+</head>
+
+<body>
+    <table style="border: 2px solid black;text-align: center;border-collapse: separate;">
+        <tr>
+            <th style="border: 1px solid black;
+            border-collapse: collapse;"> Username </th>
+            <th style="border: 1px solid black;
+            border-collapse: collapse;"> Email </th>
+            <th style="border: 1px solid black;
+            border-collapse: collapse;"> Password </th>
+            <th style="border: 1px solid black;
+            border-collapse: collapse;"> Contact </th>
+        </tr>
+        <% data.forEach(function(user) { %>
+            <tr style="border: 1px solid black;
+            border-collapse: collapse;">
+                <td style="border: 1px solid black;
+                border-collapse: collapse;">
+                    <%= user.username %>
+                </td>
+                <td style="border: 1px solid black;
+                border-collapse: collapse;">
+                    <%= user.email %>
+                </td>
+                <td style="border: 1px solid black;
+                border-collapse: collapse;">
+                    <%= user.password %>
+                </td>
+                <td style="border: 1px solid black;
+                border-collapse: collapse;">
+                    <%= user.contact %>
+                </td>
+            </tr>
+            <% }); %>
+    </table>
+</body>
+
+</html>
